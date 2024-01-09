@@ -1,3 +1,4 @@
+// max area of rectangle with longest diagonal
 #include <iostream>
 #include <cmath>
 #include <vector>
