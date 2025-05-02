@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 
 class heap
 {
@@ -141,6 +142,30 @@ int main()
         std::cout << arr[i] << " ";
     }
     std::cout << '\n';
+
+    std::cout << "using priority queue:\n";
+    // maxheap
+    std::priority_queue<int> pq;
+
+    pq.push(3);
+    pq.push(5);
+    pq.push(1);
+    pq.push(2);
+
+    std::cout << "ele at top: " << pq.top() << std::endl;
+    pq.pop();
+    std::cout << "ele at top: " << pq.top() << std::endl;
+    std::cout << "size: " << pq.size() << std::endl;
+
+    //minheap
+    std::priority_queue<int, std::vector<int>, std::greater<int>> mp;
+
+    mp.push(5);
+    mp.push(1);
+    mp.push(8);
+    mp.push(9);
+
+    std::cout << "ele at top: " << mp.top() << std::endl;
 
     return 0;
 }
